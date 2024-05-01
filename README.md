@@ -6,7 +6,8 @@ After adding the bot to your PUBLIC group give it administrator permission.
 (The program I wrote can't work on the bot chat itself because this can't interact with the pinned message of the chat which we will need to store our followers and compare them)
 
 Now you have your bot, your public group where the bot is added and it will run, the next step is to open the "instagrapi_login.py" and "Unfollower checker with telebot.py" codes and change the variables I pinned with comments with your own datas (for example you will need to change the: Username,passowrd strings with your owns, the bot token id with your own)
-And you did it! Now just start the "Unfollower checker with telebot.py" code and it will work on your telegram.
+And you did it! Now just start the "Unfollower checker with telebot.py" code, write the "/unfollowers" command on the public group you created and it will work on your telegram. 
+(First time you'll run the command this will only write and pin a message with the list of your instagram followers, then from now on once you'll run your program and your "/unfollowers" command this will check if there are any)
 
 NOTICE that this code only work with profiles that have limited followers, like less than a thousand I think, this happens because telegram messages have a characters limitation, BUT if you want to have a program like this that works with large amounts of followers, refers to my other repository
 where I realized this same code but working with FILES, so there is no limitation in the amount of followers you can store. Here is the repository: https://github.com/Micg25/Instagrapi_unfollowers_checker 

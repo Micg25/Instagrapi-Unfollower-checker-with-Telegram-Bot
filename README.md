@@ -1,4 +1,4 @@
-This bot has been realized with the "pyTelegramBotAPI" api and the "Instagrami" api. In order to make it work with your bot you must create a bot;
+This bot has been realized with the "pyTelegramBotAPI" api and the "Instagrapi" api. In order to make it work with your bot you must create a bot;
 you can follow this tutorial to realize it: https://core.telegram.org/bots/tutorial
 
 Once you made it you must create a telegram group and set it to PUBLIC, add your bot to this group but before doing it: 1. go to BotFather  2. write the "/setprivacy" command 3. choose your bot 4. set to DISABLE.

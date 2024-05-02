@@ -52,10 +52,12 @@ def unfollowers() :
             i+=1 
         bot.send_message(id, "Unfollowers list: \n" + strunf)
         messaget=bot.send_message(id,strunf2)
+        bot.unpin_all_chat_messages(id)
         bot.pin_chat_message(id,messaget.id)
     elif set2!=set1: #if the set2 is not equal to set1 it means that there are new followers, so even in this case we update the follower list in the pinned message 
         bot.send_message(id,"New followers were found, Updating the list...")
         messaget=bot.send_message(id,strunf2)
+        bot.unpin_all_chat_messages(id)
         bot.pin_chat_message(id,messaget.id)
  else: #if the pinned message is empty we calculate for the first time the list of the followers
     fw=cl.user_followers(user_id, amount = 0)
